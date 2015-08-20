@@ -104,6 +104,14 @@
                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6zu-oo-mFw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjg-kc-R45">
+                                <rect key="frame" x="0.0" y="471" width="120" height="129"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="60"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oXw-dZ-yKS"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z17-i1-4zN">
                                 <rect key="frame" x="120" y="342" width="120" height="129"/>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="60"/>
@@ -168,17 +176,18 @@
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaM-Kv-Uwl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTa-GJ-qNX">
-                                <rect key="frame" x="480" y="83" width="120" height="129"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="60"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWv-E7-hGv">
                                 <rect key="frame" x="480" y="212" width="120" height="130"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="60"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="35"/>
+                                <state key="normal" title="cos"/>
+                                <connections>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pnc-1B-gap"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLu-EN-prg">
                                 <rect key="frame" x="480" y="342" width="120" height="129"/>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="60"/>
+                                <state key="normal" title="π"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG1-tI-7pS">
                                 <rect key="frame" x="480" y="471" width="120" height="129"/>
@@ -188,9 +197,13 @@
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SOd-ex-8cN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjg-kc-R45">
-                                <rect key="frame" x="0.0" y="471" width="120" height="129"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTa-GJ-qNX">
+                                <rect key="frame" x="480" y="83" width="120" height="129"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="35"/>
+                                <state key="normal" title="sin"/>
+                                <connections>
+                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1bP-np-46t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -288,6 +301,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="decimalPoint" destination="jjg-kc-R45" id="UZL-LK-I9Q"/>
                         <outlet property="display" destination="xAH-mv-cvR" id="UBs-YZ-RHy"/>
                     </connections>
                 </viewController>
